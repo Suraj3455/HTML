@@ -1,1 +1,1 @@
-# Web-development-
+# HTML-ONLY PROJECT-
