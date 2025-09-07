@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HTML-only reference page covering core HTML topics: tags, lists, links, images, tables, forms, semantic elements, multimedia, canvas, svg, and entities.">
+  <title>HTML Master — HTML-only</title>
+  <!-- NOTE: This file intentionally contains only HTML (no CSS, no JavaScript). -->
+</head>
+<body>
+  <header>
+    <h1>HTML Master — HTML-only Examples</h1>
+    <p>A minimal, plain-HTML page demonstrating the tags and structures listed.</p>
+    <nav>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#basic">Basic Tags</a></li>
+        <li><a href="#text">Text & Headings</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#semantics">Semantic Tags</a></li>
+        <li><a href="#media">Multimedia</a></li>
+        <li><a href="#iframe">Iframes</a></li>
+        <li><a href="#display">Block vs Inline</a></li>
+        <li><a href="#attributes">Attributes</a></li>
+        <li><a href="#advanced-forms">Forms Advanced</a></li>
+        <li><a href="#entities">Entities</a></li>
+        <li><a href="#apis">HTML5 APIs (tags only)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Introduction to HTML</h2>
+      <p>HTML (HyperText Markup Language) structures web documents. A valid HTML document starts with <code>&lt;!DOCTYPE html&gt;</code> and has a root <code>&lt;html&gt;</code> element containing a <code>&lt;head&gt;</code> and a <code>&lt;body&gt;</code>.</p>
+    </section>
+
+    <section id="basic">
+      <h2>Basic Tags (<code>&lt;html&gt;, &lt;head&gt;, &lt;body&gt;)</code></h2>
+      <p>Root element: <code>&lt;html lang="en"&gt;</code></p>
+      <p>Head includes metadata; body contains visible content.</p>
+    </section>
+
+    <section id="text">
+      <h2>Headings, Paragraphs & Text Formatting</h2>
+      <h1>H1 — Heading</h1>
+      <h2>H2 — Heading</h2>
+      <h3>H3 — Heading</h3>
+      <p>This is a paragraph. Use <code>&lt;p&gt;</code> for paragraphs and <code>&lt;br&gt;</code> for a manual line break.<br>Line after a &lt;br&gt;.</p>
+      <p>Formatting: <b>bold (&lt;b&gt;)</b>, <strong>strong (&lt;strong&gt;)</strong>, <i>italic (&lt;i&gt;)</i>, <em>emphasis (&lt;em&gt;)</em>, <u>underline (&lt;u&gt;)</u>, <mark>highlight (&lt;mark&gt;)</mark>. Chemical example: X<sup>2</sup>, H<sub>2</sub>O.</p>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <h3>Ordered List</h3>
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ol>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+      </ul>
+
+      <h3>Definition List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+      </dl>
+    </section>
+
+    <section id="links">
+      <h2>Links & Anchors</h2>
+      <p>Internal link: <a href="#intro">Go to Introduction</a></p>
+      <p>External link: <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></p>
+      <p>Email link: <a href="mailto:hello@example.com">Send email</a></p>
+      <p>Telephone link: <a href="tel:+911234567890">Call</a></p>
+    </section>
+
+    <section id="images">
+      <h2>Images</h2>
+      <p>Image with required <code>alt</code> text and optional width/height attributes:</p>
+      <img src="https://via.placeholder.com/400x150?text=Placeholder" alt="Placeholder image" width="400" height="150">
+      <p>Note: <code>alt</code> should describe the image for accessibility.</p>
+    </section>
+
+    <section id="tables">
+      <h2>Tables</h2>
+      <table>
+        <caption>Sample table</caption>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple</td>
+            <td>3</td>
+            <td>$1.20</td>
+          </tr>
+          <tr>
+            <td>Banana</td>
+            <td>6</td>
+            <td>$0.50</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Use <code>colspan</code> and <code>rowspan</code> on <code>&lt;td&gt;</code> / <code>&lt;th&gt;</code> when needed.</p>
+    </section>
+
+    <section id="forms">
+      <h2>Forms (Basic)</h2>
+      <form action="#" method="get">
+        <label>Text input: <input type="text" name="username" placeholder="username"></label>
+        <br>
+        <label>Password: <input type="password" name="pwd"></label>
+        <br>
+        <label>Email: <input type="email" name="email"></label>
+        <br>
+        <label>Number: <input type="number" name="age" min="0" max="120"></label>
+        <br>
+        <label>Radio: <input type="radio" name="role" value="student"> Student</label>
+        <label><input type="radio" name="role" value="developer"> Developer</label>
+        <br>
+        <label>Checkbox: <input type="checkbox" name="subscribe"> Subscribe</label>
+        <br>
+        <label>File: <input type="file" name="file"></label>
+        <br>
+        <label>Select:
+          <select name="country">
+            <option value="">Choose</option>
+            <option value="in">India</option>
+            <option value="us">USA</option>
+          </select>
+        </label>
+        <br>
+        <label>Message:<br>
+          <textarea name="message" rows="4" cols="40"></textarea>
+        </label>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+    <section id="semantics">
+      <h2>Semantic Tags</h2>
+      <header>
+        <h3>Page header</h3>
+      </header>
+      <nav>
+        <p>Navigation block (use <code>&lt;nav&gt;</code> for main navigation).</p>
+      </nav>
+      <main>
+        <article>
+          <h3>Article example</h3>
+          <p>This is an <code>&lt;article&gt;</code> — a self-contained piece of content.</p>
+        </article>
+        <section>
+          <h3>Section example</h3>
+          <p>Use <code>&lt;section&gt;</code> to group related content.</p>
+        </section>
+        <aside>
+          <h4>Aside</h4>
+          <p>Related notes go in <code>&lt;aside&gt;</code>.</p>
+        </aside>
+      </main>
+      <footer>
+        <p>Page footer content.</p>
+      </footer>
+    </section>
+
+    <section id="media">
+      <h2>Multimedia Tags</h2>
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video</h3>
+      <video controls width="320" height="180">
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Source element</h3>
+      <picture>
+        <source media="(min-width:650px)" srcset="https://via.placeholder.com/600x200?text=Large">
+        <source media="(min-width:400px)" srcset="https://via.placeholder.com/400x150?text=Medium">
+        <img src="https://via.placeholder.com/300x100?text=Fallback" alt="Responsive image fallback">
+      </picture>
+    </section>
+
+    <section id="iframe">
+      <h2>Iframes</h2>
+      <p>Embed another page with <code>&lt;iframe&gt;</code>:</p>
+      <iframe src="https://example.com" title="Example" width="600" height="200">Your browser does not support iframes.</iframe>
+    </section>
+
+    <section id="display">
+      <h2>Block vs Inline &amp; Div &amp; Span</h2>
+      <p>Block elements (start on a new line): <code>&lt;div&gt;, &lt;p&gt;, &lt;h1&gt;</code>.</p>
+      <p>Inline elements (flow within text): <code>&lt;span&gt;, &lt;a&gt;, &lt;strong&gt;</code>.</p>
+      <div>
+        This is a &lt;div&gt; (block).
+      </div>
+      <p>This has an inline <span>span element</span> inside.</p>
+    </section>
+
+    <section id="attributes">
+      <h2>HTML Attributes</h2>
+      <p id="example-id" class="example-class" title="Hover text">This paragraph demonstrates <code>id</code>, <code>class</code>, and <code>title</code> attributes.</p>
+      <p><code>alt</code> attribute example shown on <code>&lt;img&gt;</code> above.</p>
+    </section>
+
+    <section id="advanced-forms">
+      <h2>Forms Advanced (HTML features)</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Advanced inputs</legend>
+          <label>Website (pattern example): <input type="url" name="website" placeholder="https://example.com"></label>
+          <br>
+          <label>Search: <input type="search" name="q"></label>
+          <br>
+          <label>Color: <input type="color" name="favcolor"></label>
+          <br>
+          <label>Date: <input type="date" name="date"></label>
+          <br>
+          <label>Range: <input type="range" name="volume" min="0" max="10"></label>
+          <br>
+          <label>Datalist:
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+              <option value="Chrome">
+              <option value="Firefox">
+              <option value="Safari">
+            </datalist>
+          </label>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="entities">
+      <h2>HTML Entities</h2>
+      <p>
+        Non-breaking space: A&nbsp;B<br>
+        Less than: &lt;br&gt; displays as &lt;br&gt;<br>
+        Greater than: &gt;<br>
+        Copyright: &copy; 2025<br>
+        Registered: &reg;
+      </p>
+    </section>
+
+    <section id="apis">
+      <h2>HTML5 APIs — Tags Included (no JavaScript)</h2>
+      <p>The HTML tags below are the entry points for APIs. Using the APIs requires JavaScript, but the tags themselves are pure HTML:</p>
+      <ul>
+        <li>Audio/Video: <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code></li>
+        <li>Canvas element (drawing surface): <code>&lt;canvas width="300" height="150"&gt;&lt;/canvas&gt;</code></li>
+        <li>SVG inline graphics: <code>&lt;svg&gt;</code> ... <code>&lt;/svg&gt;</code></li>
+        <li>Drag &amp; Drop: attributes like <code>draggable="true"</code> exist on elements</li>
+        <li>Local/Session Storage: storage is provided by the browser via JavaScript APIs (no HTML elements)</li>
+        <li>Geolocation: no HTML element — accessed via JavaScript navigator.geolocation</li>
+      </ul>
+
+      <h3>Canvas (tag only)</h3>
+      <canvas width="300" height="150">Your browser does not support canvas.</canvas>
+
+      <h3>SVG (inline)</h3>
+      <svg width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="180" height="60" rx="8" fill="#cccccc"/>
+        <text x="100" y="45" font-size="16" text-anchor="middle" fill="#000">SVG Example</text>
+      </svg>
+
+      <h3>Drag example (attribute only)</h3>
+      <p draggable="true">This paragraph is draggable (behavior requires JS on drop target to work).</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML Master — HTML-only. All examples are presented without CSS or JavaScript.</p>
+  </footer>
+</body>
+</html>
