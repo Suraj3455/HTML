@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images & Media Tags Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f6f8;
+    }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    figure {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 300px;
+      background: white;
+      border-radius: 8px;
+    }
+    figcaption {
+      text-align: center;
+      font-style: italic;
+      color: #666;
+    }
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    canvas {
+      border: 2px dashed #444;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎨 Images & Media Tags in HTML</h1>
+
+  <!-- 1️⃣ Image Tag -->
+  <h2>1. &lt;img&gt; — Image Tag</h2>
+  <p>Displays an image using the <code>src</code> and <code>alt</code> attributes.</p>
+  <img src="https://external-preview.redd.it/3hfIQnxL1dTGkiccpCE0dVzkn5336KleynCqdiabiNY.jpg?auto=webp&s=4eb63fee7ad19ed1758acc20d316340fd8eafbe2" alt="ZORO">
+
+  <!-- 2️⃣ Figure and Figcaption -->
+  <h2>2. &lt;figure&gt; and &lt;figcaption&gt; — Image with Caption</h2>
+  <figure>
+    <img src="https://media.lmpm.website/uploads/sites/51/2022/04/Smoky-Mountain-View-1.jpg" alt="Mountain view">
+    <figcaption>Beautiful Mountain View 🌄</figcaption>
+  </figure>
+
+  <!-- 3️⃣ Audio Tag -->
+  <h2>3. &lt;audio&gt; — Audio Tag</h2>
+  <p>Use <code>controls</code> attribute to show play/pause UI.</p>
+  <audio controls>
+    <source src="sample-audio.mp3" type="audio/mpeg">
+    
+  </audio>
+
+  <!-- 4️⃣ Video Tag -->
+  <h2>4. &lt;video&gt; — Video Tag</h2>
+  <p>Use <code>controls</code>, <code>autoplay</code>, <code>loop</code> etc. attributes.</p>
+  <video width="320" height="240" controls>
+    <!-- <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4"> -->
+    <source src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" width="620" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 5️⃣ Track Tag -->
+  <h2>5. &lt;track&gt; — Subtitles / Captions for Video</h2>
+  <video width="320" height="240" controls>
+    <source src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" type="video/mp4">
+    <!-- <track src="captions.vtt" kind="subtitles" srclang="en" label="English"> -->
+    
+  </video>
+
+  <!-- 6️⃣ Canvas Tag -->
+  <!-- <h2>6. &lt;canvas&gt; — Drawing via Script</h2>
+  <p>The canvas is used for 2D graphics, games, charts, etc. (drawn via JavaScript).</p>
+  <canvas id="myCanvas" width="300" height="200"></canvas>
+
+  <script>
+    const c = document.getElementById("myCanvas");
+    const ctx = c.getContext("2d");
+    ctx.fillStyle = "#4caf50";
+    ctx.fillRect(50, 50, 200, 100);
+    ctx.fillStyle = "#fff";
+    ctx.font = "20px Arial";
+    ctx.fillText("Canvas Box 🎨", 70, 120);
+  </script> -->
+
+  <!-- 7️⃣ Image Map -->
+  <h2>7. &lt;map&gt; and &lt;area&gt; — Clickable Areas on Image</h2>
+  <p>Define clickable regions inside one image.</p>
+
+  <img src="https://images.squarespace-cdn.com/content/v1/5d7fa27ac591f01062106a9f/d355ee04-655f-4f37-99bb-744d97a6bd1a/Virat+Kohli.jpg" alt="Clickable image" usemap="#workmap">
+
+  <map name="workmap">
+    <area shape="rect" coords="0,0,200,200" href="https://www.google.com" alt="Google" target="_blank">
+    <area shape="rect" coords="200,0,400,200" href="https://www.google.com/search?q=virat+kohli&oq=virat&gs_lcrp=EgZjaHJvbWUqDwgAECMYJxjjAhiABBiKBTIPCAAQIxgnGOMCGIAEGIoFMgwIARAuGCcYgAQYigUyBggCEEUYOTIHCAMQABiABDIKCAQQABixAxiABDIKCAUQABixAxiABDIHCAYQABiABDIGCAcQRRg90gEIMjY1OWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" alt="virat Kohli" target="_blank">
+  </map>
+
+</body>
+</html>

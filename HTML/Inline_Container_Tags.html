@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Inline & Container Tags Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+    h1, h2 {
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    section {
+      margin-bottom: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h1>✂️ HTML Inline & Container Tags Example</h1>
+
+<section>
+  <h2>1️⃣ &lt;span&gt; — Inline Text Container</h2>
+  <p>This is a normal paragraph, and <span class="highlight">this text is highlighted using &lt;span&gt;</span> inline without breaking the flow.</p>
+</section>
+
+<section>
+  <h2>2️⃣ &lt;bdi&gt; — Bi-Directional Isolation</h2>
+  <p>The <code>&lt;bdi&gt;</code> element isolates text direction so that it does not affect surrounding text.</p>
+  <p>Example:</p>
+  <p>Normal: Username: <bdi>مرحبا</bdi></p>
+</section>
+
+<section>
+  <h2>3️⃣ &lt;bdo&gt; — Bi-Directional Override</h2>
+  <p>The <code>&lt;bdo&gt;</code> element overrides text direction.</p>
+  <p>Example (RTL override): <bdo dir="rtl">This text is right-to-left</bdo></p>
+</section>
+
+<section>
+  <h2>4️⃣ &lt;wbr&gt; — Word Break Opportunity</h2>
+  <p>The <code>&lt;wbr&gt;</code> tag suggests a point where a long word can break and wrap to the next line.</p>
+  <p>Example: supercalifragilistic<wbr>expialidocious</p>
+</section>
+
+</body>
+</html>

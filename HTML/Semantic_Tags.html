@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic & Layout Tags Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+    h1, h2 {
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    header, footer, main, section, article, aside, div, dialog {
+      background: white;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header, footer {
+      background-color: #4caf50;
+      color: white;
+    }
+    aside {
+      background-color: #ffeb3b;
+    }
+    dialog {
+      border: 2px solid #333;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📐 HTML Semantic & Layout Tags Example</h1>
+
+<!-- Header -->
+<header>
+  <h2>1️⃣ &lt;header&gt;</h2>
+  <p>This section usually contains the website header, logo, navigation menu.</p>
+</header>
+
+<!-- Main Content -->
+<main>
+  <h2>2️⃣ &lt;main&gt;</h2>
+  <p>The main content of the page goes here. Only one &lt;main&gt; per page is allowed.</p>
+
+  <!-- Section -->
+  <section>
+    <h2>3️⃣ &lt;section&gt;</h2>
+    <p>Used to group related content into a standalone section.</p>
+  </section>
+
+  <!-- Article -->
+  <article>
+    <h2>4️⃣ &lt;article&gt;</h2>
+    <p>Represents an independent, self-contained piece of content, such as a blog post or news article.</p>
+  </article>
+
+  <!-- Aside -->
+  <aside>
+    <h2>5️⃣ &lt;aside&gt;</h2>
+    <p>Sidebar content, like related links, ads, or supplementary info.</p>
+  </aside>
+
+  <!-- Details & Summary -->
+  <details>
+    <summary>6️⃣ &lt;details&gt; &amp; &lt;summary&gt; — Click to expand</summary>
+    <p>This content is hidden by default and only appears when the user clicks the summary.</p>
+  </details>
+
+  <!-- Dialog -->
+  <dialog id="myDialog">
+    <h2>7️⃣ &lt;dialog&gt;</h2>
+    <p>This is a popup dialog box. Click the button to close it.</p>
+    <button onclick="document.getElementById('myDialog').close()">Close</button>
+  </dialog>
+  <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+
+  <!-- Div -->
+  <div>
+    <h2>8️⃣ &lt;div&gt;</h2>
+    <p>A generic block container used for grouping content. Can be styled with CSS.</p>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <h2>9️⃣ &lt;footer&gt;</h2>
+  <p>Contains footer content such as copyright, contact info, or site links.</p>
+</footer>
+
+</body>
+</html>

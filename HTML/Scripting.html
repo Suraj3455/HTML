@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML Scripting & Metadata Tags Example">
+  <meta name="author" content="Suraj Thorat">
+  
+  <!-- Base URL -->
+  <base href="https://example.com/">
+
+  <title>HTML Scripting & Metadata Tags</title>
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+    h1, h2 {
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    section {
+      margin-bottom: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 8px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>💻 HTML Scripting & Metadata Tags Example</h1>
+
+<section>
+  <h2>1️⃣ &lt;script&gt; — Embed or Reference JavaScript</h2>
+  <p>JavaScript can be embedded directly or linked externally.</p>
+  <button onclick="greetUser()">Click Me</button>
+  
+  <script>
+    function greetUser() {
+      alert("Hello! Welcome to HTML scripting demo.");
+    }
+  </script>
+  
+  <!-- External script example -->
+  <!-- <script src="script.js"></script> -->
+</section>
+
+<section>
+  <h2>2️⃣ &lt;noscript&gt; — Fallback for JS Disabled</h2>
+  <p>If JavaScript is disabled, this message is displayed:</p>
+  <noscript>
+    <p style="color:red;">JavaScript is disabled in your browser. Some features may not work!</p>
+  </noscript>
+</section>
+
+<section>
+  <h2>3️⃣ &lt;style&gt; — Internal CSS</h2>
+  <p>This page uses internal CSS defined in the &lt;head&gt; section with &lt;style&gt; tag.</p>
+</section>
+
+<section>
+  <h2>4️⃣ &lt;link&gt; — External CSS / Resources</h2>
+  <p>The &lt;link&gt; tag references external stylesheets or other resources.</p>
+  <p>Example: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></p>
+</section>
+
+<section>
+  <h2>5️⃣ &lt;meta&gt; — Document Metadata</h2>
+  <p>Metadata provides information about the document, like charset, author, description, viewport settings.</p>
+  <p>Examples used in &lt;head&gt;:</p>
+  <ul>
+    <li>&lt;meta charset="UTF-8"&gt;</li>
+    <li>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</li>
+    <li>&lt;meta name="description" content="HTML demo"&gt;</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6️⃣ &lt;base&gt; — Base URL for Links</h2>
+  <p>All relative URLs in the document will use this base URL:</p>
+  <p>Example:</p>
+  <a href="page.html">Visit Page</a>
+  <p>This link points to: <strong>https://example.com/page.html</strong> because of &lt;base href="https://example.com/"&gt;</p>
+</section>
+
+</body>
+</html>

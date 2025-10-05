@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Table Tags Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+    h1, h2 {
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    section {
+      margin-bottom: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    thead {
+      background-color: #e0e0e0;
+    }
+    tfoot {
+      background-color: #f9f9f9;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📊 HTML Table Tags Example</h1>
+
+<section>
+  <h2>1️⃣ Basic Table Structure — &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</h2>
+  <p>Use <code>&lt;table&gt;</code> to create a table, <code>&lt;tr&gt;</code> for rows, <code>&lt;th&gt;</code> for headers, and <code>&lt;td&gt;</code> for data cells.</p>
+  
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>25</td>
+      <td>USA</td>
+    </tr>
+    <tr>
+      <td>Mary</td>
+      <td>30</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Ali</td>
+      <td>28</td>
+      <td>India</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>2️⃣ Table Sections — &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</h2>
+  <p>Organize table into header, body, and footer for better structure and styling.</p>
+  
+  <table>
+    <caption>Employee Details</caption>
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>101</td>
+        <td>John</td>
+        <td>IT</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Mary</td>
+        <td>HR</td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>Ali</td>
+        <td>Finance</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total Employees: 3</td>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+
+<section>
+  <h2>3️⃣ Table Caption — &lt;caption&gt;</h2>
+  <p>The <code>&lt;caption&gt;</code> tag provides a title or description for the table. It should be placed directly after the &lt;table&gt; tag.</p>
+  
+  <table>
+    <caption>Top 3 Programming Languages</caption>
+    <tr>
+      <th>Rank</th>
+      <th>Language</th>
+      <th>Usage</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Python</td>
+      <td>Web, AI, Data Science</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>JavaScript</td>
+      <td>Web, Apps</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Java</td>
+      <td>Enterprise, Android</td>
+    </tr>
+  </table>
+</section>
+
+</body>
+</html>

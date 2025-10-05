@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Embedded Content Tags Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+    h1, h2 {
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    section {
+      margin-bottom: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    iframe, embed, object {
+      border: 1px solid #ccc;
+      margin-top: 10px;
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📦 HTML Embedded Content Tags Example</h1>
+
+<section>
+  <h2>1️⃣ &lt;iframe&gt; — Inline Frame</h2>
+  <p>Displays another webpage inside the current page.</p>
+  <iframe src="https://www.example.com" title="Example Iframe"></iframe>
+</section>
+
+<section>
+  <h2>2️⃣ &lt;embed&gt; — Embed External Content</h2>
+  <p>Embeds external resources like PDFs, audio, or video.</p>
+  <embed src=".." type="application/pdf">
+</section>
+
+<section>
+  <h2>3️⃣ &lt;object&gt; &amp; &lt;param&gt; — Object Embedding & Parameters</h2>
+  <p>The &lt;object&gt; tag can embed media or other content. Parameters can be passed with &lt;param&gt;.</p>
+  
+  <object data=".." type="application/pdf" width="600" height="300">
+    <param name="autoplay" value="true">
+    Your browser does not support embedded objects.
+  </object>
+</section>
+
+</body>
+</html>

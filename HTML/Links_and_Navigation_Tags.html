@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Links & Navigation Tags Example</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f4f4; color: #222; }
+  h1 { color: #2c3e50; }
+  section { background: #fff; padding: 20px; margin-bottom: 25px; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+  code { background: #eee; padding: 2px 5px; border-radius: 5px; }
+  a { color: #0077cc; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { background: #333; padding: 10px; border-radius: 6px; }
+  nav a { color: white; padding: 10px 15px; text-decoration: none; display: inline-block; }
+  nav a:hover { background: #555; }
+  pre { background: #f9f9f9; padding: 10px; border-radius: 5px; }
+</style>
+</head>
+<body>
+
+<h1>HTML Links & Navigation Tags Examples</h1>
+
+<!-- Section 1: <a> Tag -->
+<section id="section1">
+  <h2>1. The &lt;a&gt; Tag (Anchor Tag)</h2>
+  <p>The <code>&lt;a&gt;</code> tag defines a <b>hyperlink</b> — used to link to another page, section, or file.</p>
+  <h3>Syntax:</h3>
+  <pre>&lt;a href="URL"&gt;Link Text&lt;/a&gt;</pre>
+
+  <h3>Examples:</h3>
+  <p><a href="https://www.google.com">Visit Google</a> — basic external link</p>
+  <p><a href="https://www.google.com" target="_blank">Open Google in new tab</a> (using <code>target="_blank"</code>)</p>
+  <p><a href="#section2">Jump to Navigation Section (Internal Link)</a></p>
+  <p><a href="sample.pdf" download>Download PDF File</a> (using <code>download</code> attribute)</p>
+
+  <h3>Common Attributes:</h3>
+  <ul>
+    <li><code>href</code> — destination link or section ID</li>
+    <li><code>target</code> — where to open link (_blank, _self, _parent, _top)</li>
+    <li><code>title</code> — tooltip when hovered</li>
+    <li><code>download</code> — allows downloading file</li>
+  </ul>
+</section>
+
+<!-- Section 2: <nav> Tag -->
+<section id="section2">
+  <h2>2. The &lt;nav&gt; Tag (Navigation Section)</h2>
+  <p>The <code>&lt;nav&gt;</code> tag represents a section of navigation links (like menus, headers, or footers).</p>
+
+  <h3>Example:</h3>
+  <pre>
+&lt;nav&gt;
+  &lt;a href="index.html"&gt;Home&lt;/a&gt;
+  &lt;a href="about.html"&gt;About&lt;/a&gt;
+  &lt;a href="services.html"&gt;Services&lt;/a&gt;
+  &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+  </pre>
+
+  <h3>Rendered Output:</h3>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#section1">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <h3>Purpose:</h3>
+  <ul>
+    <li>Groups together important navigation links.</li>
+    <li>Improves accessibility and SEO (screen readers understand menus).</li>
+    <li>Usually placed in the header or footer.</li>
+  </ul>
+</section>
+
+</body>
+</html>

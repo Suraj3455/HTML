@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms & Input Tags Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+    h1, h2 {
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+    section {
+      margin-bottom: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form > div {
+      margin-bottom: 15px;
+    }
+    input, textarea, select, button, output, progress, meter {
+      padding: 8px;
+      margin-top: 5px;
+      display: block;
+      width: 100%;
+      max-width: 400px;
+    }
+    fieldset {
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📝 HTML Forms & Input Tags Example</h1>
+
+<section>
+  <h2>1️⃣ &lt;form&gt; — Form Container</h2>
+  <p>Wraps input elements for submission.</p>
+  <form action="#" method="post">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+    </div>
+
+    <div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your message here"></textarea>
+    </div>
+
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</section>
+
+<section>
+  <h2>2️⃣ &lt;select&gt; &amp; &lt;option&gt; — Dropdown Menu</h2>
+  <form>
+    <label for="country">Choose a country:</label>
+    <select id="country" name="country">
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="india">India</option>
+    </select>
+  </form>
+</section>
+
+<section>
+  <h2>3️⃣ &lt;fieldset&gt; &amp; &lt;legend&gt; — Group Inputs</h2>
+  <form>
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname">
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname">
+    </fieldset>
+  </form>
+</section>
+
+<section>
+  <h2>4️⃣ &lt;datalist&gt; — Predefined Input Options</h2>
+  <label for="browser">Choose a browser:</label>
+  <input list="browsers" id="browser" name="browser">
+  <datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Safari">
+    <option value="Edge">
+  </datalist>
+</section>
+
+<section>
+  <h2>5️⃣ &lt;output&gt; — Display Result</h2>
+  <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <label for="a">A:</label>
+    <input type="number" id="a" name="a" value="0">
+    <label for="b">B:</label>
+    <input type="number" id="b" name="b" value="0">
+    <p>Sum: <output name="result" for="a b">0</output></p>
+  </form>
+</section>
+
+<section>
+  <h2>6️⃣ &lt;progress&gt; &amp; &lt;meter&gt; — Progress / Measurement</h2>
+  <label>Download Progress:</label>
+  <progress value="7" max="100"></progress>
+
+  <label>Battery Level:</label>
+  <meter value="89">60%</meter>
+</section>
+
+</body>
+</html>
